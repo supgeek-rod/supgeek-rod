@@ -18,4 +18,4 @@ Shenzhen,China・Web Developer
 
 <a href="https://github.com/HeyCommunity/HeyCommunity-backend"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=heycommunity&repo=heycommunity-backend"></a>
 <a href="https://github.com/HeyCommunity/HeyCommunity-wxapp"><img width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=heycommunity&repo=heycommunity-wxapp"></a>
-<a href="https://github.com/supgeek-rod/faker-zh"><img width="32%" src="https://github-readme-stats.vercel.app/api/pin/?username=supgeek-rod&repo=faker-zh"></a>
+<a href="https://github.com/supgeek-rod/faker-zh"><img width="33%" src="https://github-readme-stats.vercel.app/api/pin/?username=supgeek-rod&repo=faker-zh"></a>
