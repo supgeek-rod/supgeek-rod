@@ -32,8 +32,8 @@ layout: default
 
               <div class="flex-self-center ml-3 flex-self-stretch d-none d-lg-flex flex-items-center lh-condensed-ultra">
                 <div>
-                  <span class="color-fg-muted">最近更新:</span>
-                  <strong>2022-02-02 12:12:12</strong>
+                  <span class="color-fg-muted">最近发布:</span>
+                  <strong class="color-fg-muted">{{ site.posts[0].date | date: "%Y/%m/%d" }}</strong>
                 </div>
               </div>
             </div>
@@ -58,7 +58,7 @@ layout: default
               </div>
 
               <div class="js-details-container Details">
-                <div role="grid" class="Details-content--hidden-not-important js-navigation-container js-active-navigation-container d-md-block">
+                <div role="grid" class="Details-content--hidden-not-important js-navigation-container js-active-navigation-container d-block">
                   {%- for post in site.posts -%}
                     <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
                       <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">

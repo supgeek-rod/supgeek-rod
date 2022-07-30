@@ -2,7 +2,7 @@
   <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
     <div class="container-xl d-lg-flex flex-items-center px-3 px-md-4 px-lg-5">
       <div class="d-flex flex-justify-between flex-items-center">
-        <a class="mr-4 no-underline color-fg-inherit" href="{{ '/' | relative_url }}">{{ site.name }}</a>
+        <a class="mr-4 no-underline color-fg-inherit" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 
         <div class="d-flex flex-items-center">
           <button aria-label="Toggle navigation" aria-expanded="false" type="button" data-view-component="true" class="js-details-target btn-link d-lg-none mt-1 color-fg-inherit">
@@ -26,6 +26,7 @@
         <!-- 导航 -->
         <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
           <ul class="d-lg-flex list-style-none">
+            <!--
             <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
               <details class="HeaderMenu-details details-overlay details-reset width-full">
                 <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
@@ -66,6 +67,7 @@
             <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
               <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" href="#!">归档</a>
             </li>
+            -->
 
             <li class="mr-0 mr-lg-3 position-relative flex-wrap flex-justify-between flex-items-center border-bottom border-lg-bottom-0 d-block d-lg-flex flex-lg-nowrap flex-lg-items-center">
               <a class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" href="#!">关于</a>
@@ -80,7 +82,7 @@
               <div class="position-relative">
                 <form class="js-site-search-form">
                   <label class="form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
-                    <input type="text" class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" placeholder="Search not available">
+                    <input disabled type="text" class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus" placeholder="Search not available">
                   </label>
                 </form>
               </div>
