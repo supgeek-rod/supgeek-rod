@@ -77,11 +77,15 @@ layout: default
                       </div>
 
                       <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3">
-                          <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
-                            {%- for tag in post.tags -%}
-                              <span class="mr-1">{{ tag }}</span>
-                            {%- endfor -%}
-                          </span>
+                        <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                          {%- for cate in post.categories -%}
+                            <span class="mr-1 Label Label--primary">{{ cate }}</span>
+                          {%- endfor -%}
+
+                          {%- for tag in post.tags -%}
+                            <span class="mr-1 Label">{{ tag }}</span>
+                          {%- endfor -%}
+                        </span>
                       </div>
 
                       <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
