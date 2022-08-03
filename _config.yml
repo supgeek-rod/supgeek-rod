@@ -1,11 +1,7 @@
-title: SupeRodv2's DevBlog
+theme: jekyll-theme-github-like
 
-keywords: ""
+title: SupeRodv2's DevBlog
 description: "SupGeekRod's development experience and insights"
-baseurl: "/"    # the subpath of your site, e.g. /blog
-url: ""         # the base hostname & protocol for your site, e.g. http://example.com
 
 author: supgeek-rod
 email: your-email@example.com
-
-github_username: supgeek-rod
