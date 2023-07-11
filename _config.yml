@@ -1,4 +1,4 @@
-remote_theme: supgeek-rod/jekyll-theme-github-like@e8df58099cd942777a21bc9199a9242133820612
+remote_theme: supgeek-rod/jekyll-theme-github-like
 plugins:
   - jekyll-remote-theme
 
