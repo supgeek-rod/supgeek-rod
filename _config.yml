@@ -1,7 +1,9 @@
-theme: jekyll-theme-github-like
+remote_theme: supgeek-rod/jekyll-theme-github-like@e8df58099cd942777a21bc9199a9242133820612
+plugins:
+  - jekyll-remote-theme
 
-title: SupeRodv2's DevBlog
-description: "SupGeekRod's development experience and insights"
+title: SupeRod's DevBlog
+description: "SupeRod's development experience and insights"
 
 author: supgeek-rod
-email: your-email@example.com
+email: supgeek.rod@gmail.com
