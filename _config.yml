@@ -1,6 +1,4 @@
-remote_theme: supgeek-rod/jekyll-theme-github-like
-plugins:
-  - jekyll-remote-theme
+theme: jekyll-theme-github-like
 
 title: SupeRod's DevBlog
 description: "SupeRod's development experience and insights"
