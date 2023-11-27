@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+
+<div class="container-xl px-3 px-md-4 px-lg-5 mt-4">
+  WIKI
+
+  <ul>
+  {% for doc in site.wiki %}
+    <li>
+      {{ doc.title }}
+    </li>
+  {% endfor %}
+  </ul>
+</div>

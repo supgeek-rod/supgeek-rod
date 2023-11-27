@@ -1,0 +1,134 @@
+---
+layout: default
+---
+
+<style>
+  .nav ul li.active {
+    background-color: rgba(177, 186, 196, 0.08);
+  }
+
+  .nav ul li.active:after {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: -8px;
+    width: 4px;
+    height: 24px;
+    content: "";
+    background-color: rgb(47, 129, 247);
+    border-radius: 6px;
+  }
+
+  .nav ul li:hover {
+    background-color: rgba(177, 186, 196, 0.12);
+    color: rgb(230, 237, 243);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px max(1px, 0.0625rem) inset;
+  }
+
+  .nav ul li {
+    position: relative;
+    display: flex;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 6px;
+    transition: background 33.333ms linear 0s;
+    color: rgb(230, 237, 243);
+    cursor: pointer;
+    appearance: none;
+    background-image: unset;
+    background-position: unset;
+    background-size: unset;
+    background-repeat: unset;
+    background-attachment: unset;
+    background-origin: unset;
+    background-clip: unset;
+    border: unset;
+    width: calc(100% - 16px);
+    font-family: unset;
+    text-align: unset;
+    margin-top: unset;
+    margin-bottom: unset;
+    font-weight: 600;
+  }
+
+  .nav ul li a {
+    text-decoration: none;
+    padding: 6px 8px;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    border-radius: 6px;
+    color: inherit;
+  }
+</style>
+
+<div class="d-flex">
+  <div class="position-sticky border-right d-block" style="width:326px;height:calc(100vh - 65px);top:65px">
+    <nav>
+      <div class="dd-none px-4 pb-3 border-bottom d-xxl-block">
+        <div class="mt-3">
+          <a rel="" class="f6 pl-2 pr-5 ml-n1 pb-1 Link--primary color-fg-default">WIKI</a>
+        </div>
+        <div class="mt-3" id="allproducts-menu">
+          <a rel="" class="d-block pl-1 mb-2 h3 color-fg-default no-underline _product-title" d-href="{{ page.url }}">
+            {{ page.subject }}
+          </a>
+        </div>
+      </div>
+      <div class="border-right dd-none d-xxl-block bg-primary overflow-y-auto flex-shrink-0"
+           style="padding-bottom:185px">
+        <nav class="nav pt-3 ml-3">
+          <ul>
+            {% assign docs = site.wiki | where: "subject_slug", page.subject_slug | sort: "zindex" %}
+            {% for doc in docs %}
+              <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </div>
+
+  <div class="flex-column flex-1 min-width-0">
+    <main id="main-content" style="scroll-margin-top:5rem">
+      <div class="container-xl px-3 px-md-6 my-4">
+        <div class="dd-none d-xxl-block mt-3 mr-auto width-full">
+          <nav data-testid="breadcrumbs-in-article" class="f5 breadcrumbs Breadcrumbs_breadcrumbs__xAC4i" aria-label="Breadcrumb">
+            <ul>
+              <li class="d-inline-block">
+                <a rel="" data-testid="breadcrumb-link" title="Site policy" class="Link--primary mr-2 color-fg-muted" href="#">WIKI</a>
+                <span class="color-fg-muted pr-2">/</span>
+              </li>
+              <li class="d-inline-block">
+                <a rel="" data-testid="breadcrumb-link" title="Privacy Policies" class="Link--primary mr-2 color-fg-muted" href="#">{{ page.subject}}</a>
+                <span class="color-fg-muted pr-2">/</span>
+              </li>
+              <li class="d-inline-block">
+                <a rel="" data-testid="breadcrumb-link" title="GitHub Privacy Statement" class="Link--primary mr-2 color-fg-muted" href="#">{{ page.title }}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="mt-4 Box-sc-g0xbh4-0 ArticleGridLayout_containerBox__lLLio">
+          <div class="Box-sc-g0xbh4-0 eQiQea">
+            <div class="d-flex flex-items-baseline flex-justify-between">
+              <h1 id="title-h1" class="border-bottom-0">{{ page.title }}</h1>
+            </div>
+          </div>
+
+          <div id="article-intro" class="Box-sc-g0xbh4-0 ijSsTo f4"></div>
+
+          <div class="blob mt-3">
+            <div class="markdown-body">
+              {{ page.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

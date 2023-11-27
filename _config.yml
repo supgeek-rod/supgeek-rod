@@ -5,3 +5,7 @@ description: "SupeRod's development experience and insights"
 
 author: supgeek-rod
 email: supgeek.rod@gmail.com
+
+collections:
+  wiki:
+    output: true
