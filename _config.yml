@@ -6,6 +6,9 @@ description: "SupeRod's development experience and insights."
 author: supgeek-rod
 email: supgeek.rod@gmail.com
 
+## Google Analytics ID, like G-XXXXXXXXXX
+gaid: G-4XR5TLRQ7J
+
 collections:
   wiki:
     output: true
