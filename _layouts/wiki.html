@@ -84,7 +84,7 @@ layout: default
           <ul>
             {% assign docs = site.wiki | where: "subject_slug", page.subject_slug | sort: "zindex" %}
             {% for doc in docs %}
-              <li><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
+              <li class="{% if page.url == doc.url %} active {% endif %}"><a href="{{ doc.url | relative_url }}">{{ doc.title }}</a></li>
             {% endfor %}
           </ul>
         </nav>
