@@ -1,7 +1,7 @@
 ---
 layout: wiki 
 subject_slug: vim
-subject: vim
+subject: Vim
 title: Getting Started
 permalink: /wiki/vim
 ---
