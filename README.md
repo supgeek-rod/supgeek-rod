@@ -2,11 +2,11 @@
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=supgeek-rod&theme=vue&count_private=true" />
 
 
-### Hello, I'm SupeRodv2 👋
+### Hi, I'm SupeRod 👋
 
 Shenzhen,China・Web Developer 
   
-:superhero_man: Creating [HeyCommunity.com](https://www.heycommunity.com)   
+:superhero_man: Working hard to become super geek man   
 
 <div>
 <a href="#"><img height="25px" src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/png/dev/frameworks/laravel@3x.png"></a>
